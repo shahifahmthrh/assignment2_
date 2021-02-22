@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAIN</title>
+
+    <link rel="stylesheet" href="./css/lain.css">
+    <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color:#333;
+    }
+    </style>
+</head>
+
+<body>
+    <hr/> 
+    <ul><div align="right">
+        <li><div class="active">
+                <a href="./HOME.html">HOME</a>
+        </div></li>
+        <li><div class="active">
+            <a href="./PRODUCT.html">PRODUCT</a>
+        </div></li>
+        <li><div class="active">
+            <a href="./GALLERY.html">GALLERY</a>
+        </div></li>
+        <li><div class="active">
+            <a href="./BLOG.html">BLOG</a>
+        </div></li>
+        <li><div class="active">
+            <a href="./INVENTORY.html">INVENTORY</a>
+        </div></li>
+    </div></ul>
+    
+
+    <br><b>
+        <img class="img_article" src="https://assets.boredpanda.com/blog/wp-content/themes/boredpanda/images/default-user-profile-image.png" width="200px" height="200px">
+        <p>
+            <h2><div class="title_articles">
+                Nama Anda
+            </h2></div>
+            <h5><div class="title_articles">
+                Front End Designer
+            </h5></div>
+        </p>
+    </b></br>
+    
+    <p>
+    <div text-align: center;>
+    <table> 
+        <tbody>
+            <tr>
+                <td><h4><div class="profile">
+                    Availability
+                </div></h4></td>
+                <td><div class="profile">
+                    Full Time
+                </div></td>
+            </tr>
+            <tr>
+                <td><h4><div class="profile">
+                    Usia
+                </div></h4></td>
+                <td><div class="profile">
+                    17
+                </div></td>
+            </tr>
+            <tr>
+                <td><h4><div class="profile">
+                    Lokasi
+                </div></h4></td>
+                <td><div class="profile">
+                    Jakarta, Indonesia
+                </div></td>
+            </tr>
+            <tr>
+                <td><h4><div class="profile">
+                    Pengalaman
+                </div></h4></td>
+                <td><div class="profile">
+                    2
+                </div></td>
+            </tr>
+            <tr>
+                <td><h4><div class="profile">
+                    Email
+                </div></h4></td>
+                <td><div class="profile">
+                    Developer@gmail.com
+                </div></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </p>
+
+    <ul>
+    <li><div class="active">
+            <a href="./Kontak.html">Kontak</a>
+    </div></li>
+    <li><div class="active">
+        <a href="./Resume.html">Resume</a>
+    </div></li>
+    </ul>
+
+   <form>
+    <h2>Hasil: <span id="hasil">
+    </span></h2>
+    <span id="hasil">
+    </span>
+    <span id="hasil">
+    </span>
+    <span id="hasil">
+    </span>
+    <span id="hasil">
+    </span>
+    <span id="hasil">
+    </span>
+    <span id="hasil">
+    </span>
+
+    <br>
+    <div class="articles">
+        <label><h4>Nama</h4></label>
+        <input type="text" id="nilai_form" name="Nama Anda" class="form_login"placeholder="masukkan nama anda">
+
+        <label><h4>Role</h4><label>
+        <input type="text" id="nilai_form" 
+        name="Front End Designer" class="form_login">
+
+        <label><h4>Availability</h4></label>
+        <input type="text" id="nilai_form"  name="Full Time" class="form_login">
+    
+        <label><h4>Usia</h4></label>
+        <input type="text" id="nilai_form" name="17" class="form_login">
+
+        <label><h4>Lokasi</h4></label>
+        <input type="text" id="nilai_form" name="Jakarta, Indonesia" class="form_login">
+    
+        <label><h4>Years Experience</h4></label>
+        <input type="text" id="nilai_form" name="2" class="form_login">
+    
+        <label><h4>Email</h4></label>
+        <input type="text" id="nilai_form" name="Developer@gmail.com" class="form_login">
+
+        <input type="submit" id="tombol_form" class="tombol_login" value="Submit">
+   </form>
+   </div>
+
+   <br/>
+    <br/>
+</body>
+<script>
+document.getElementById("tombol_form").addEventListener("click", tampilkan_nilai_form)
+
+function tampilkan_nilai_form(){
+    var nilai_form=document.getElementById("nilai_form").innerHTML;
+    document.getElementById("hasil").innerHTML=nilai_form;
+}
+</script>
+</html>
+
+
+

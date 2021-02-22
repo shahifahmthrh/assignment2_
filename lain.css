@@ -1,0 +1,39 @@
+.form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+
+.tombol_login {
+    background: #034d06;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+  }
+.profile_table1, th, td {
+	padding: 0px 20px;
+	font-size: 11pt;
+	margin-bottom: 1px;
+    margin-left: 250px;
+    margin-right: 300px;
+    float: center;
+}
+
+.title_articles{
+    margin-left: 290px;
+    margin-top: 5px;
+    line-height: 1.2;
+}
+
+.img_article{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+}
